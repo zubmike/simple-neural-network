@@ -27,7 +27,7 @@ public class NeuralNetwork implements Serializable {
 		for (int i = 0; i < HIDDEN_LAYER_SIZE; i++) {
 			neurons.add(new SigmoidNeuron(INPUT_SIZE));
 		}
-		neurons.add(new SigmoidNeuron(INPUT_SIZE));
+		neurons.add(new SigmoidNeuron(HIDDEN_LAYER_SIZE));
 	}
 
 	public void learn(Map<List<Double>, Double> learningMap) {
